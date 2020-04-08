@@ -17,8 +17,8 @@ app.get('/', (request, response) => {
 
 // Route Definitions
 app.get('/location', locationHandler);
-// app.get('/weather', weatherHandler);
-// app.get('/trails', trailsHandler);
+app.get('/weather', weatherHandler);
+app.get('/trails', trailsHandler);
 app.use('*', notFoundHandler);
 app.use(errorHandler);
 
